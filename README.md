@@ -51,7 +51,6 @@ public classNewBehaviourScript : MonoBehaviour {
         	table 的对象是 GameObject，第一个选择框是 activeSelf 属性。
         	Transform 的属性是Position、Rotation、Scale。
         	table 的部件是 Mesh Filter、Box Collider、Mesh Renderer。
-		![Alt text](https://github.com/wakaka001/3d-game-learning/tree/master/src/UMLet.png)
 	3. 	//查找对象
 		public static GameObject Find(string name)
         	//添加子对象
@@ -73,3 +72,4 @@ public classNewBehaviourScript : MonoBehaviour {
            	 父类对象：   
            	     void Start () {
             	    this.BroadcastMessage("say");}
+![Alt text](https://github.com/wakaka001/3d-game-learning/tree/master/src/UMLet.png)
