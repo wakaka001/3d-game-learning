@@ -51,6 +51,7 @@ public classNewBehaviourScript : MonoBehaviour {
         	table 的对象是 GameObject，第一个选择框是 activeSelf 属性。
         	Transform 的属性是Position、Rotation、Scale。
         	table 的部件是 Mesh Filter、Box Collider、Mesh Renderer。
+		![Alt text](https://github.com/wakaka001/3d-game-learning/tree/master/src/UMLet.png)
 	3. 	//查找对象
 		public static GameObject Find(string name)
         	//添加子对象
@@ -58,7 +59,7 @@ public classNewBehaviourScript : MonoBehaviour {
         	//遍历对象树
         	foreach (Transform child in transform) {}
         	//清除所有子对象
-        foreach (Transform child in transform) { Destroy(child.gameObject);}
+        	foreach (Transform child in transform) { Destroy(child.gameObject);}
     	4.资源预设（Prefabs）与 对象克隆 (clone)
         	预设的好处：
         	    预设可以方便地使用多次出现的对象集，从而达到减轻工作量的作用。
