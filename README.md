@@ -1,11 +1,12 @@
 # 作业内容
-##1.简答题
-###（1）解释 游戏对象（GameObjects） 和 资源（Assets）的区别与联系。
+
+## 1.简答题
+### （1）解释 游戏对象（GameObjects） 和 资源（Assets）的区别与联系。
 游戏对象是所有在Unity上的基本，包括了物体，摄像机，音频等。
 资源是指在Unity上可使用的资源文件，例如图片以及具体的音乐等。
 区别：对象是抽象的，资源是具体的
 联系：对象可以调用资源
-###（2）编写一个代码，使用 debug 语句来验证 MonoBehaviour基本行为或事件触发的条件
+### （2）编写一个代码，使用 debug 语句来验证 MonoBehaviour基本行为或事件触发的条件
 ```
 public classNewBehaviourScript : MonoBehaviour {
     void Awake() {
@@ -41,7 +42,7 @@ public classNewBehaviourScript : MonoBehaviour {
     }
   }
 ```
-###(3）查找脚本手册，了解 GameObject，Transform，Component 对象
+### (3）查找脚本手册，了解 GameObject，Transform，Component 对象
     1.分别翻译官方对三个对象的描述(Description)
         游戏对象是在Unity中的基础对象，代表了人物，道具和背景。
         变换组件确定了每个对象的位置，旋转和缩放。
