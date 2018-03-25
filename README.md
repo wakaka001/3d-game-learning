@@ -43,33 +43,32 @@ public classNewBehaviourScript : MonoBehaviour {
   }
 ```
 ### (3）查找脚本手册，了解 GameObject，Transform，Component 对象
-    1.分别翻译官方对三个对象的描述(Description)
-        游戏对象是在Unity中的基础对象，代表了人物，道具和背景。
-        变换组件确定了每个对象的位置，旋转和缩放。
-        组件是物体与行为之间的类似螺母与螺栓的枢纽。
-    2.描述下图中 table 对象（实体）的属性、table 的 Transform 的属性、 table 的部件
-        table 的对象是 GameObject，第一个选择框是 activeSelf 属性。
-        Transform 的属性是Position、Rotation、Scale。
-        table 的部件是 Mesh Filter、Box Collider、Mesh Renderer。
-	
-    3.  //查找对象
-        public static GameObject Find(string name)
-        //添加子对象
-        public static GameObect CreatePrimitive(PrimitiveTypetype)
-        //遍历对象树
-        foreach (Transform child in transform) {}
-        //清除所有子对象
+    	1.分别翻译官方对三个对象的描述(Description)
+        	游戏对象是在Unity中的基础对象，代表了人物，道具和背景。
+        	变换组件确定了每个对象的位置，旋转和缩放。
+        	组件是物体与行为之间的类似螺母与螺栓的枢纽。
+    	2.描述下图中 table 对象（实体）的属性、table 的 Transform 的属性、 table 的部件
+        	table 的对象是 GameObject，第一个选择框是 activeSelf 属性。
+        	Transform 的属性是Position、Rotation、Scale。
+        	table 的部件是 Mesh Filter、Box Collider、Mesh Renderer。
+	3. 	//查找对象
+		public static GameObject Find(string name)
+        	//添加子对象
+        	public static GameObect CreatePrimitive(PrimitiveTypetype)
+        	//遍历对象树
+        	foreach (Transform child in transform) {}
+        	//清除所有子对象
         foreach (Transform child in transform) { Destroy(child.gameObject);}
-    4.资源预设（Prefabs）与 对象克隆 (clone)
-        预设的好处：
-            预设可以方便地使用多次出现的对象集，从而达到减轻工作量的作用。
-        预设与对象克隆 (clone or copy or Instantiate of Unity Object) 关系：
-            对象克隆不会因为克隆源的改变而改变，预设则相反。
-    5.尝试解释组合模式（Composite Pattern / 一种设计模式）。使用 BroadcastMessage() 方法
-        组合模式允许用户将对象组合成树形结构来表现”部分-整体“的层次结构，使得客户以一致的方式处理单个对象以及对象的组合。组合模式实现的最关键的地方是——简单对象和复合对象必须实现相同的接口。这就是组合模式能够将组合对象和简单对象进行一致处理的原因。
-            子类对象：
-                void say() {
-                print("Hello World!");}
-            父类对象：   
-                void Start () {
-                this.BroadcastMessage("say");}
+    	4.资源预设（Prefabs）与 对象克隆 (clone)
+        	预设的好处：
+        	    预设可以方便地使用多次出现的对象集，从而达到减轻工作量的作用。
+        	预设与对象克隆 (clone or copy or Instantiate of Unity Object) 关系：
+         	   对象克隆不会因为克隆源的改变而改变，预设则相反。
+   	 5.尝试解释组合模式（Composite Pattern / 一种设计模式）。使用 BroadcastMessage() 方法
+        	组合模式允许用户将对象组合成树形结构来表现”部分-整体“的层次结构，使得客户以一致的方式处理单个对象以及对象的组合。组合模式实现的最关键的地方是——简单对象和复合对象必须实现相同的接口。这就是组合模式能够将组合对象和简单对象进行一致处理的原因。
+          	  子类对象：
+           	     void say() {
+           	     print("Hello World!");}
+           	 父类对象：   
+           	     void Start () {
+            	    this.BroadcastMessage("say");}
