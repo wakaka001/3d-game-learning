@@ -72,4 +72,4 @@ public classNewBehaviourScript : MonoBehaviour {
            	 父类对象：   
            	     void Start () {
             	    this.BroadcastMessage("say");}
-![image](https://github.com/wakaka001/3d-game-learning/tree/master/src/UMLet.png)
+![image](https://github.com/wakaka001/3d-game-learning/blob/master/src/UMLet.png)
